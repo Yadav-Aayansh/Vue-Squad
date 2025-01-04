@@ -1,3 +1,6 @@
+from .. import db
+from ..custom import IndianZone
+
 class MCQ(db.Model):
     __tablename__ = 'mcqs'
     mcq_id = db.Column(db.Integer, primary_key=True)
