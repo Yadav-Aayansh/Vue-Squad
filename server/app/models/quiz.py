@@ -1,3 +1,6 @@
+from .. import db
+from ..custom import IndianZone
+
 class Quiz(db.Model):
     __tablename__ = 'quizzes'
     quiz_id = db.Column(db.Integer, primary_key=True)
