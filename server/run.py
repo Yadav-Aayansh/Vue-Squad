@@ -5,7 +5,6 @@ from app import app_creator
 from dotenv import load_dotenv
 import os
 
-
 load_dotenv()
 host = os.getenv('BACKEND_HOST')
 
