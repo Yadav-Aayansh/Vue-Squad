@@ -2,7 +2,7 @@
     import google from '@/assets/google.svg';
     import facebook from '@/assets/facebook.svg';
     import microsoft from '@/assets/microsoft.svg';
-    import logo from '@/assets/logo.png'
+    import logo from '@/assets/logo.svg'
     import back_left from '@/assets/back-left.svg'
     import back_right from '@/assets/back-right.svg'
     import login from '@/assets/login.png'
@@ -111,7 +111,7 @@
                 <div class="container-fluid">
                     <div class="brand">
                         <img :src="logo" alt="Logo" class="me-2" height="50px">
-                        <p class="brand">HomeMate</p>
+                        <p class="brand">Learning Sathi</p>
                     </div>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -208,28 +208,6 @@
                                 </p>
                             </div>
 
-                            <div class="d-flex align-items-center my-4">
-                                <hr class="flex-grow-1" />
-                                <span class="mx-2">OR</span>
-                                <hr class="flex-grow-1" />
-                            </div>
-
-                            <div class="d-flex flex-column gap-3">
-                                <a :href="googleOAuthUrl"
-                                    class="oauth-btn oauth rounded d-flex flex-row align-items-center justify-content-center gap-2 p-2">
-                                    <img :src="google" alt="">
-                                    <div class="">
-                                        Login with Google
-                                    </div>
-                                </a>
-                                <a :href="facebookOAuthUrl"
-                                    class="oauth-btn oauth rounded d-flex flex-row align-items-center justify-content-center gap-2 p-2">
-                                    <img :src="facebook" alt="">
-                                    <div>
-                                        Login with Facebook
-                                    </div>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,8 @@
 <script setup>
     import { ref } from 'vue';
     import {currentUserStore} from '@/stores/currentUser.js'
-    import admin from '@/assets/admin.jpg'
-    import customer from '@/assets/customer2.png'
-    import servicer from '@/assets/servicer.png'
-
+    import student from '@/assets/student.svg'
+    import instructor from '@/assets/instructor.png'
 
     const collapse = ref(false)
     const emit = defineEmits(['status'])
@@ -18,13 +16,12 @@
     const role = currentUser_Store.role
     
     const profile_pic = ref('')
-    if (role === 'Admin') {
-        profile_pic.value = admin
-    } else if (role === 'Customer') {
-        profile_pic.value = customer
-    } else if (role === 'Professional') {
-        profile_pic.value = servicer
+    if (role === 'Student') {
+        profile_pic.value = student
+    } else if (role === 'Instructor') {
+        profile_pic.value = instructor
     }
+
 
 </script>
 
@@ -36,7 +33,7 @@
             </button>
 
             <div class="navbar-brand">
-                <h3 class="kg-text2">HomeMate</h3>
+                <h3 class="kg-text2">Learning Sathi</h3>
             </div>
 
             <div class="ms-auto d-flex align-items-center">

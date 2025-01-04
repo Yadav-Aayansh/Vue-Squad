@@ -24,11 +24,12 @@ def app_creator(MyConfig):
     with app.app_context():
         db.create_all()
 
-    from .api import SignupApi, TokenApi
+    from .api import SignupApi, TokenApi, LoginApi, LogoutApi
     
     api.add_resource(SignupApi, '/api/signup')
-    # api.add_resource(LoginApi, '/api/login')
+    api.add_resource(LoginApi, '/api/login')
     api.add_resource(TokenApi, '/api/token-chekcer')
+    api.add_resource(LogoutApi, '/api/logout')
     
     migrate.init_app(app, db)
 

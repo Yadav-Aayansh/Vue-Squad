@@ -16,10 +16,6 @@ export async function tokenChecker() {
         currentUser_Store.updateRole(decodedToken.role)
         currentUser_Store.updateUsername(decodedToken.sub)
         currentUser_Store.updateEmail(decodedToken.email)
-        
-        if (decodedToken.role === 'Customer') {
-            currentUser_Store.updatePincode(decodedToken.pincode)
-        }
         return true;
     } else {
         return false;

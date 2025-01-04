@@ -45,26 +45,18 @@
                     <i class="ri-home-7-line"></i>
                 </RouterLink>
 
-                <RouterLink to="/dashboard/profile" v-if="role === 'Professional'" class="btn my-btn mb-3 nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Profile" active-class="active-link">
-                    <i class="ri-user-smile-line"></i>
+                <RouterLink to="/dashboard/my-courses" v-if="role === 'Student' || role === 'Instructor'" class="btn my-btn mb-3 nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="My Courses" active-class="active-link">
+                    <i class="ri-book-line"></i>
                 </RouterLink>
 
-                <RouterLink to="/dashboard/services" v-if="role === 'Admin'" class="btn my-btn mb-3 nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Services" active-class="active-link">
-                    <i class="ri-lightbulb-line"></i>
+                <RouterLink to="/dashboard/queries" v-if="role === 'Student' || role === 'Instructor'" class="btn my-btn mb-3 nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Queries" active-class="active-link">
+                    <i class="ri-question-line"></i>
                 </RouterLink>
 
-                <RouterLink to="/dashboard/customers" v-if="role === 'Admin'" class="btn my-btn mb-3 nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Customers" active-class="active-link">
-                    <i class="ri-group-line"></i>
-                </RouterLink>
-
-                <RouterLink to="/dashboard/service-professionals" v-if="role === 'Customer' || role === 'Admin'" class="btn my-btn mb-3 nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Service Professionals"
+                <!-- <RouterLink to="/dashboard/service-professionals" v-if="role === 'Student' || role === 'Instrucrtor'" class="btn my-btn mb-3 nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Service Professionals"
                 :class="{ 'active-link': isServiceProfessionalActive }">
                     <i class="ri-briefcase-line"></i>
-                </RouterLink>
-
-                <RouterLink to="/dashboard/service-requests" class="btn my-btn mb-3 nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Service Requests" active-class="active-link">
-                    <i class="ri-service-line"></i>
-                </RouterLink>
+                </RouterLink> -->
 
                 <RouterLink to="#" @click.prevent="logout" class="btn my-btn mb-4 nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Logout">
                     <i class="ri-logout-circle-line"></i>
