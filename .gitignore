@@ -1,0 +1,54 @@
+# General ignores
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+*.swo
+*.~ 
+
+# Python virtual environment
+server/venv/
+
+# Environment variables
+.env
+.env.*
+
+# Node.js (if the client folder contains a Vue.js project)
+client/node_modules/
+client/dist/
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+*.out
+*.err
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Coverage and test results
+coverage/
+*.cover
+*.coverage
+*.cov
+.nyc_output/
+.pytest_cache/
+
+# Backup files
+*.bak
+*.orig
+*.tmp
+
+# Python eggs and distributions
+*.egg
+*.egg-info/
+dist/
+build/
